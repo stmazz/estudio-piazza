@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estudio Piazza</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #0a3d62;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      max-height: 80px;
+    }
+    .cta {
+      margin: 20px 0;
+      text-align: center;
+    }
+    .cta button {
+      background: #0a3d62;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #0a3d62;
+    }
+    .servicios {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .servicio {
+      background: white;
+      flex: 1 1 250px;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-top: 30px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background: #0a3d62;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      margin-top: 30px;
+    }
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: white;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 24px;
+      text-decoration: none;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://static.wixstatic.com/media/f1d51e_6827ddf4f6f84c3e87c5a51d1271d3b1~mv2.png" alt="Estudio Piazza" />
+    <h1>Estudio Piazza</h1>
+    <p>Asesoramiento contable, fiscal y societario para empresas y profesionales</p>
+  </header>
+
+  <div class="cta">
+    <a href="#contacto"><button>Solicitá una consulta</button></a>
+  </div>
+
+  <main>
+    <h2>Quiénes Somos</h2>
+    <p>Somos un estudio contable ubicado en Olivos, Buenos Aires, conformado por profesionales con amplia experiencia en contabilidad, impuestos, sociedades y asesoramiento integral a emprendedores, PyMEs y profesionales independientes.</p>
+
+    <h2>Nuestros Servicios</h2>
+    <div class="servicios">
+      <div class="servicio">
+        <h3>Contabilidad</h3>
+        <p>Balance, libros, reportes e informes mensuales y anuales. Asesoramiento contable integral.</p>
+      </div>
+      <div class="servicio">
+        <h3>Impuestos</h3>
+        <p>Liquidaciones de IVA, Ganancias, Bienes Personales, Monotributo, Autónomos y más.</p>
+      </div>
+      <div class="servicio">
+        <h3>Sociedades</h3>
+        <p>Constitución, reforma de estatutos, inscripción en AFIP, IGJ, ARBA y demás organismos.</p>
+      </div>
+      <div class="servicio">
+        <h3>Asesoramiento a Emprendedores</h3>
+        <p>Te acompañamos desde el inicio para que empieces tu actividad correctamente y sin sorpresas.</p>
+      </div>
+    </div>
+
+    <h2>Planes y Modalidades</h2>
+    <p>Ofrecemos planes mensuales adaptados a cada tipo de cliente:</p>
+    <ul>
+      <li><strong>Plan Emprendedor:</strong> ideal para quienes recién comienzan.</li>
+      <li><strong>Plan Profesional:</strong> diseñado para monotributistas y autónomos con actividad consolidada.</li>
+      <li><strong>Plan PyME:</strong> para empresas con obligaciones fiscales y contables más complejas.</li>
+    </ul>
+
+    <h2 id="contacto">Contacto</h2>
+    <p>Completá el formulario o escribinos por WhatsApp. Nos contactaremos a la brevedad.</p>
+    <form action="mailto:estudiocontablepiazza@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="nombre" placeholder="Tu nombre" required />
+      <input type="email" name="email" placeholder="Tu correo" required />
+      <textarea name="mensaje" rows="5" placeholder="Tu consulta"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <a class="whatsapp" href="https://wa.me/5491164185812" target="_blank" aria-label="Escribinos por WhatsApp">📱</a>
+
+  <footer>
+    <p>© 2025 Estudio Piazza | Olivos, Buenos Aires</p>
+  </footer>
+</body>
+</html>
